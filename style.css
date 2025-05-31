@@ -1,0 +1,198 @@
+  /* --- Estilos generales y preguntas --- */
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('Fondo2.png'); /* ← ruta relativa a index.html */
+  background-size: contain;       /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+    .survey-container {
+      width: 100%;
+      max-width: 600px;
+      background-color: #ffffff;
+      border-radius: 8px #3380ff;
+      box-shadow: 0px 0px 2px #3380ff;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .question {
+      display: none;
+      margin-bottom: 20px;
+    }
+
+    .question.active {
+      display: block;
+      animation: slideIn 0.5s ease-in-out;
+    }
+
+    .question label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .question input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button {
+      background-color: #4169E1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .button:hover {
+      background-color: #000;
+    }
+
+    .button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .submit-button-container {
+      text-align: center;
+    }
+
+    .submit-button {
+      background-color: #000;
+      color: white;
+    }
+
+    .submit-button:hover {
+      background-color: #333;
+    }
+
+    .thank-you-message, .already-submitted-message {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .thank-you-message {
+      color: #4169E1;
+      background-color: #fff;
+      border: 2px solid #4169E1;
+    }
+
+    .already-submitted-message {
+      color: red;
+      background-color: #ffebee;
+      border: 1px solid #f44336;
+    }
+
+    .success-icon {
+      font-size: 3em;
+      color: #4169E1;
+      margin-bottom: 10px;
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateX(-20px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    .question.error {
+      border: 2px solid red;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+    .shake {
+      animation: shake 0.3s;
+    }
+
+    .scale-container {
+      display: flex;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .scale-option {
+      flex: 1;
+      cursor: pointer;
+      border-left: 1px solid #ccc;
+      background-color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .scale-option:first-child {
+      border-left: none;
+    }
+
+    .scale-option input {
+      display: none;
+    }
+
+    .scale-option span {
+      display: block;
+      padding: 8px 0;
+      font-size: 0.9em;
+    }
+
+    .scale-option input:checked + span {
+      background-color: #4169E1;
+      color: white;
+    }
+
+    .scale-container::before,
+    .scale-container::after {
+      position: absolute;
+      top: -20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .scale-container::before {
+      content: 'Nada probable';
+      left: 0;
+    }
+
+    .scale-container::after {
+      content: 'Muy probable';
+      right: 0;
+    }

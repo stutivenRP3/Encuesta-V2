@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuesta de Calidad del Servicio de Soporte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="survey-container">
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="https://rp3.com.ec/wp-content/themes/rp3/images/rp3-logo.png" alt="Logo RP3" style="height: 80px;">
+      <h1 style="margin: 0; font-family: 'Arial', sans-serif; color: #003366; font-weight: bold;">
+        Evaluación de Servicio de Soporte
+      </h1>
+    </div>
+
+    <div id="surveyContent">
+      <form id="surveyFormMensual" method="POST" action="http://localhost:5678/webhook-test/surveyFormMensual">
+        <input type="hidden" name="IdUsuario" id="IdUsuario">
+        <input type="hidden" name="Nombre" id="Nombre">
+        <input type="hidden" name="Apellido" id="Apellido">
+        <input type="hidden" name="Departamento" id="Departamento">
+        <input type="hidden" name="Token" id="Token">
+
+        <!-- PREGUNTAS -->
+        <div class="question active" id="question1">
+          <label>1. ¿Qué tan satisfecho estás con el servicio de soporte recibido en los últimos 30 días?</label>
+          <input type="hidden" name="P1" value="1.Qué tan satisfecho estás con el servicio de soporte recibido en los últimos 30 días">
+          <input type="radio" name="calidad_servicio" value="Excelente"> Excelente <br>
+          <input type="radio" name="calidad_servicio" value="Bueno"> Bueno <br>
+          <input type="radio" name="calidad_servicio" value="Regular"> Regular <br>
+          <input type="radio" name="calidad_servicio" value="Malo"> Malo <br>
+          <input type="radio" name="calidad_servicio" value="Muy Malo"> Muy Malo <br>
+        </div>
+
+        <!-- Tiempo de respuesta -->
+        <div class="question" id="question2">
+          <label>2. ¿Qué tan satisfecho(a) estás con los tiempos de respuesta del servicio de soporte?</label>
+          <input type="hidden" name="P2" value="2.¿Qué tan satisfecho(a) estás con los tiempos de respuesta del servicio de soporte?">
+          <input type="radio" name="informacion_tickets" value="Muy satisfecho(a)"> Muy satisfecho(a)<br>
+          <input type="radio" name="informacion_tickets" value="Satisfecho(a)"> Satisfecho(a)<br>
+          <input type="radio" name="informacion_tickets" value="Neutral"> Neutral<br>
+          <input type="radio" name="informacion_tickets" value="Insatisfecho(a)"> Insatisfecho(a)<br>
+          <input type="radio" name="informacion_tickets" value="Muy insatisfecho(a)"> Muy insatisfecho(a)<br>
+        </div>
+
+        <!-- Efectividad -->
+        <div class="question" id="question3">
+          <label>3.	¿Qué tan efectiva consideras que fue la resolución de los incidentes reportados?</label>
+          <input type="hidden" name="P3" value="3.¿Qué tan efectiva consideras que fue la resolución de los incidentes reportados?">
+          <input type="radio" name="Tiempo_resolucion1" value="Muy efectiva"> Muy efectiva <br>
+          <input type="radio" name="Tiempo_resolucion1" value="Efectiva"> Efectiva <br>
+          <input type="radio" name="Tiempo_resolucion1" value="Neutral"> Neutral <br>
+          <input type="radio" name="Tiempo_resolucion1" value="Poco efectiva"> Poco efectiva <br>
+          <input type="radio" name="Tiempo_resolucion1" value="Nada efectiva"> Nada efectiva <br>
+        </div>
+
+        <!-- Comunicación -->
+        <div class="question" id="question4">
+          <label>4. ¿La información proporcionada por el equipo fue clara y fácil de entender?</label>
+          <input type="hidden" name="P4" value="4. ¿La información proporcionada por el equipo fue clara y fácil de entender?">
+          <input type="radio" name="Proactividad" value="Siempre"> Siempre <br>
+          <input type="radio" name="Proactividad" value="Frecuentemente"> Frecuentemente <br>
+          <input type="radio" name="Proactividad" value="A veces"> A veces <br>
+          <input type="radio" name="Proactividad" value="Rara vez"> Rara vez <br>
+          <input type="radio" name="Proactividad" value="Nunca"> Nunca <br>
+        </div>
+
+        <!-- Profesionalismo -->
+        <div class="question" id="question5">
+          <label>5.	¿Cómo calificarías la amabilidad y el profesionalismo del equipo de soporte?</label>
+          <input type="hidden" name="P5" value="5.¿Cómo calificarías la amabilidad y el profesionalismo del equipo de soporte?">
+          <input type="radio" name="calidad_servicio2" value="Excelente"> Excelente <br>
+          <input type="radio" name="calidad_servicio2" value="Bueno"> Bueno <br>
+          <input type="radio" name="calidad_servicio2" value="Regular"> Regular <br>
+          <input type="radio" name="calidad_servicio2" value="Malo"> Malo <br>
+          <input type="radio" name="calidad_servicio2" value="Muy Malo"> Muy Malo <br>        
+        </div>
+
+        <!-- Disponibilidad -->
+        <div class="question" id="question6">
+          <label>6.  ¿Que tan efectivo es contactar al equipo de soporte cuando lo necesitaste?</label>
+          <input type="hidden" name="P6" value="6.¿Que tan efectivo es contactar al equipo de soporte cuando lo necesitaste?">
+          <input type="radio" name="Tiempo_resolucion2" value="Muy efectiva"> Muy efectiva <br>
+          <input type="radio" name="Tiempo_resolucion2" value="Efectiva"> Efectiva <br>
+          <input type="radio" name="Tiempo_resolucion2" value="Neutral"> Neutral <br>
+          <input type="radio" name="Tiempo_resolucion2" value="Poco efectiva"> Poco efectiva <br>
+          <input type="radio" name="Tiempo_resolucion2" value="Nada efectiva"> Nada efectiva <br>
+        </div>
+
+
+<!-- <div class="question" id="question8">
+  <label>9.	¿Qué tan probable es que recomiendes el servicio de soporte a otra empresa? (Escala del 1 al 10, donde 1 es nada probable y 10 es muy probable)</label>
+  <input type="hidden" name="P9" value="9.	¿Qué tan probable es que recomiendes el servicio de soporte a otra empresa? (Escala del 1 al 10, donde 1 es nada probable y 10 es muy probable)">
+  <div class="scale-container">
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="1"><span>1</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="2"><span>2</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="3"><span>3</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="4"><span>4</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="5"><span>5</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="6"><span>6</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="7"><span>7</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="8"><span>8</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="9"><span>9</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="10"><span>10</span>
+    </label>
+  </div>
+</div> -->
+
+        <div class="question" id="question10">
+          <label>7.	Desde tu experiencia, ¿qué aspectos del servicio de soporte deberían mejorarse con mayor urgencia?</label>
+          <input type="hidden" name="P7" value="7.Desde tu experiencia, ¿qué aspectos del servicio de soporte deberían mejorarse con mayor urgencia?">
+          <textarea name="sugerencias" rows="4" ></textarea>
+        </div>
+
+        <div class="buttons">
+          <button type="button" class="button" id="prevButton" onclick="prevQuestion()" disabled>Anterior</button>
+          <button type="button" class="button" id="nextButton" onclick="nextQuestion()">Siguiente</button>
+        </div>
+
+        <div class="submit-button-container" id="submitButtonContainer" style="display:none;">
+          <button type="button" class="button submit-button" onclick="submitSurvey()">Enviar Encuesta</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="finalMessage" class="thank-you-message" style="display: none;">
+      <div class="success-icon">&#10004;</div>
+      <p>¡Has finalizado la encuesta online, gracias por participar!</p>
+    </div>
+
+    <div id="alreadySubmittedMessage" class="already-submitted-message" style="display: none;">
+      <p>Ya has completado esta encuesta anteriormente.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
