@@ -120,7 +120,7 @@ let currentQuestionIndex = 0;
     return;
   }
 
-  const form = document.getElementById("surveyFormMensual");
+  const form = document.getElementById("EncuestaDesempeno");
   const formData = new FormData(form);
 
   fetch(form.action, {
