@@ -25,82 +25,201 @@
 
         <!-- PREGUNTAS -->
         <div class="question active" id="question1">
-          <label>1. ¿Qué tan satisfecho estás con el servicio de soporte recibido en los últimos 30 días?</label>
-          <input type="hidden" name="P1" value="1.Qué tan satisfecho estás con el servicio de soporte recibido en los últimos 30 días">
-          <input type="hidden" name="Categoria1" value="General">
+          <label>1. ¿El equipo de soporte ha respondido en un tiempo adecuado a los tickets generados por su cliente?</label>
+          <input type="hidden" name="P1" value="1. ¿El equipo de soporte ha respondido en un tiempo adecuado a los tickets generados por su cliente?">
+          <input type="hidden" name="Categoria1" value="Tiempo de atnecion y cumplimiento">
           <input type="hidden" name="Cuantitativa1" value="1">
-          <input type="radio" name="q1" value="5"> Excelente <br>
-          <input type="radio" name="q1" value="4"> Bueno <br>
-          <input type="radio" name="q1" value="3"> Regular <br>
-          <input type="radio" name="q1" value="2"> Malo <br>
-          <input type="radio" name="q1" value="1"> Muy Malo <br>
+          <input type="radio" name="q1" value="Si"> Si<br>
+          <input type="radio" name="q1" value="No"> No<br>
+          <input type="radio" name="q1" value="En algunos casos"> En algunos casos <br>
         </div>
 
         <!-- Tiempo de respuesta -->
         <div class="question" id="question2">
-          <label>2.¿Qué tan satisfecho(a) estás con los tiempos de respuesta del servicio de soporte?</label>
-          <input type="hidden" name="P2" value="2.¿Qué tan satisfecho(a) estás con los tiempos de respuesta del servicio de soporte?">
-          <input type="hidden" name="Categoria2" value="Tiempo de respuesta">
+          <label>2. En una escala del 1 al 10, ¿Con cuanto evalúas el nivel de conocimiento funcional del equipo respecto a los soportes gestionados?</label>
+          <input type="hidden" name="P2" value="2. En una escala del 1 al 10, ¿Con cuanto evalúas el nivel de conocimiento funcional del equipo respecto a los soportes gestionados?">
+          <input type="hidden" name="Categoria2" value="Capacidad tecnica del soporte">
           <input type="hidden" name="Cuantitativa2" value="1">
-          <input type="radio" name="q2" value="5"> Muy satisfecho(a)<br>
-          <input type="radio" name="q2" value="4"> Satisfecho(a)<br>
-          <input type="radio" name="q2" value="3"> Neutral<br>
-          <input type="radio" name="q2" value="2"> Insatisfecho(a)<br>
-          <input type="radio" name="q2" value="1)"> Muy insatisfecho(a)<br>
+          <div class="scale-container">
+    <label class="scale-option">
+      <input type="radio" name="q2" value="1"><span>1</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="2"><span>2</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="3"><span>3</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="4"><span>4</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="5"><span>5</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="6"><span>6</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="7"><span>7</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="8"><span>8</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="9"><span>9</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q2" value="10"><span>10</span>
+    </label>
+  </div>
         </div>
 
         <!-- Efectividad -->
         <div class="question" id="question3">
-          <label>3.¿Qué tan efectiva consideras que fue la resolución de los incidentes reportados?</label>
-          <input type="hidden" name="P3" value="3.¿Qué tan efectiva consideras que fue la resolución de los incidentes reportados?">
-          <input type="hidden" name="Categoria3" value="Efectividad">
+          <label>. ¿Con qué frecuencia recibe novedades de sus clientes sobre la resolución de los tickets de soporte?</label>
+          <input type="hidden" name="P3" value=". ¿Con qué frecuencia recibe novedades de sus clientes sobre la resolución de los tickets de soporte?">
+          <input type="hidden" name="Categoria3" value="Comunicacion y claridad">
           <input type="hidden" name="Cuantitativa3" value="1">
-          <input type="radio" name="q3" value="5"> Muy efectiva <br>
-          <input type="radio" name="q3" value="4"> Efectiva <br>
-          <input type="radio" name="q3" value="3"> Neutral <br>
-          <input type="radio" name="q3" value="2"> Poco efectiva <br>
-          <input type="radio" name="q3" value="1"> Nada efectiva <br>
+          <input type="radio" name="q3" value="4"> Siempre <br>
+          <input type="radio" name="q3" value="3"> Normal <br>
+          <input type="radio" name="q3" value="2"> En ocasiones <br>
+          <input type="radio" name="q3" value="1"> Nunca <br>
         </div>
 
         <!-- Comunicación -->
         <div class="question" id="question4">
-          <label>4.¿La información proporcionada por el equipo fue clara y fácil de entender?</label>
-          <input type="hidden" name="P4" value="4. ¿La información proporcionada por el equipo fue clara y fácil de entender?">
-          <input type="hidden" name="Categoria4" value="Comunicación">
+          <label>4. ¿Qué tan satisfecho está con la comunicación del equipo de soporte durante la gestión de los casos?</label>
+          <input type="hidden" name="P4" value="4. ¿Qué tan satisfecho está con la comunicación del equipo de soporte durante la gestión de los casos?">
+          <input type="hidden" name="Categoria4" value="Comunicacion y claridad">
           <input type="hidden" name="Cuantitativa4" value="1">
-          <input type="radio" name="q4" value="5"> Siempre <br>
-          <input type="radio" name="q4" value="4"> Frecuentemente <br>
-          <input type="radio" name="q4" value="3"> A veces <br>
-          <input type="radio" name="q4" value="2"> Rara vez <br>
-          <input type="radio" name="q4" value="1"> Nunca <br>
+          <input type="radio" name="q4" value="3"> Satisfecho <br>
+          <input type="radio" name="q4" value="2"> Neutral <br>
+          <input type="radio" name="q4" value="1"> Insatisfecho <br>
         </div>
 
         <!-- Profesionalismo -->
         <div class="question" id="question5">
-          <label>5.	¿Cómo calificarías la amabilidad y el profesionalismo del equipo de soporte?</label>
-          <input type="hidden" name="P5" value="5.¿Cómo calificarías la amabilidad y el profesionalismo del equipo de soporte?">
-          <input type="hidden" name="Categoria5" value="Profesionalismo">
+          <label>5. ¿Considera que el equipo de soporte entiende correctamente los requerimientos del cliente asignado?</label>
+          <input type="hidden" name="P5" value="5. ¿Considera que el equipo de soporte entiende correctamente los requerimientos del cliente asignado?">
+          <input type="hidden" name="Categoria5" value="Comunicacion y claridad">
           <input type="hidden" name="Cuantitativa5" value="1">
-          <input type="radio" name="q5" value="5"> Excelente <br>
-          <input type="radio" name="q5" value="4"> Bueno <br>
-          <input type="radio" name="q5" value="3"> Regular <br>
-          <input type="radio" name="q5" value="2"> Malo <br>
-          <input type="radio" name="q5" value="1"> Muy Malo <br>        
+          <input type="radio" name="q5" value="Si"> Si <br>
+          <input type="radio" name="q5" value="No"> No <br>
+          <input type="radio" name="q5" value="Depende del caso"> Depende del caso <br>    
         </div>
 
         <!-- Disponibilidad -->
         <div class="question" id="question6">
-          <label>6.  ¿Que tan efectivo es contactar al equipo de soporte cuando lo necesitaste?</label>
-          <input type="hidden" name="P6" value="6.¿Que tan efectivo es contactar al equipo de soporte cuando lo necesitaste?">
+          <label>6. Evalúe del 1 al 10 la efectividad del equipo de soporte para resolver casos de nivel 2 o 3 (complejidad media/alta).</label>
+          <input type="hidden" name="P6" value="6. Evalúe del 1 al 10 la efectividad del equipo de soporte para resolver casos de nivel 2 o 3 (complejidad media/alta).">
+          <input type="hidden" name="Categoria6" value="Capacidad tecnica del soporte">
+          <input type="hidden" name="Cuantitativa6" value="1">
+          <div class="scale-container">
+    <label class="scale-option">
+      <input type="radio" name="q6" value="1"><span>1</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="2"><span>2</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="3"><span>3</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="4"><span>4</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="5"><span>5</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="6"><span>6</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="7"><span>7</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="8"><span>8</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="9"><span>9</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q6" value="10"><span>10</span>
+    </label>
+  </div>
+        </div>
+        
+        <div class="question" id="question7">
+          <label>7.  ¿Que tan efectivo es contactar al equipo de soporte cuando lo necesitaste?</label>
+          <input type="hidden" name="P7" value="7.¿Que tan efectivo es contactar al equipo de soporte cuando lo necesitaste?">
           <input type="hidden" name="Categoria6" value="Disponibilidad">
           <input type="hidden" name="Cuantitativa6" value="1">
-          <input type="radio" name="q6" value="5"> Muy efectiva <br>
-          <input type="radio" name="q6" value="4"> Efectiva <br>
-          <input type="radio" name="q6" value="3"> Neutral <br>
-          <input type="radio" name="q6" value="2"> Poco efectiva <br>
-          <input type="radio" name="q6" value="1"> Nada efectiva <br>
+          <input type="radio" name="q7" value="5"> Muy efectiva <br>
+          <input type="radio" name="q7" value="4"> Efectiva <br>
+          <input type="radio" name="q7" value="3"> Neutral <br>
+          <input type="radio" name="q7" value="2"> Poco efectiva <br>
+          <input type="radio" name="q7" value="1"> Nada efectiva <br>
         </div>
 
+        <div class="question" id="question8">
+          <label>8. ¿Considera usted que se han cumplido los tiempos de respuesta establecidos para los tickets generados?</label>
+          <input type="hidden" name="P8" value="8. ¿Considera usted que se han cumplido los tiempos de respuesta establecidos para los tickets generados?">
+          <input type="hidden" name="Categoria8" value="Tiempos de atencion y cumplimiento">
+          <input type="hidden" name="Cuantitativa8" value="1">
+          <input type="radio" name="q8" value="5"> Siempre <br>
+          <input type="radio" name="q8" value="4"> A veces <br>
+          <input type="radio" name="q8" value="3"> Neutral <br>
+          <input type="radio" name="q8" value="2"> No <br>
+          <input type="radio" name="q8" value="1"> Desconozco <br>
+        </div>
+
+        <div class="question" id="question9">
+          <label>9. En general, ¿qué tan satisfecho está con el soporte funcional brindado?</label>
+          <input type="hidden" name="P9" value="9. En general, ¿qué tan satisfecho está con el soporte funcional brindado">
+          <input type="hidden" name="Categoria9" value="Satisfacción general y confianza">
+          <input type="hidden" name="Cuantitativa9" value="1">
+          <input type="radio" name="q9" value="3"> Satisfecho<br>
+          <input type="radio" name="q9" value="2"> Neutral <br>
+          <input type="radio" name="q9" value="1"> Insatisfecho <br>
+        </div>
+
+        <div class="question" id="question10">
+          <label>10. Evalúe del 1 al 10 el nivel de confianza que tiene en el equipo de soporte para gestionar correctamente los requerimientos de su cliente.</label>
+          <input type="hidden" name="P10" value="10. Evalúe del 1 al 10 el nivel de confianza que tiene en el equipo de soporte para gestionar correctamente los requerimientos de su cliente.">
+          <input type="hidden" name="Categoria10" value="Disponibilidad">
+          <input type="hidden" name="Cuantitativa610 value="1">
+         <div class="scale-container">
+    <label class="scale-option">
+      <input type="radio" name="q10" value="1"><span>1</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="2"><span>2</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="3"><span>3</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="4"><span>4</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="recomendacion" value="5"><span>5</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="6"><span>6</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="7"><span>7</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="8"><span>8</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="9"><span>9</span>
+    </label>
+    <label class="scale-option">
+      <input type="radio" name="q10" value="10"><span>10</span>
+    </label>
+  </div>
+        </div>
 
 <!-- <div class="question" id="question8">
   <label>9.	¿Qué tan probable es que recomiendes el servicio de soporte a otra empresa? (Escala del 1 al 10, donde 1 es nada probable y 10 es muy probable)</label>
@@ -138,14 +257,6 @@
     </label>
   </div>
 </div> -->
-
-        <div class="question" id="question10">
-          <label>7.	Desde tu experiencia, ¿qué aspectos del servicio de soporte deberían mejorarse con mayor urgencia?</label>
-          <input type="hidden" name="P7" value="7.Desde tu experiencia, ¿qué aspectos del servicio de soporte deberían mejorarse con mayor urgencia?">
-          <input type="hidden" name="Categoria7" value="Sugerencia">
-          <input type="hidden" name="Cuantitativa7" value="0">
-          <textarea name="q7" rows="4" ></textarea>
-        </div>
 
         <div class="buttons">
           <button type="button" class="button" id="prevButton" onclick="prevQuestion()" disabled>Anterior</button>
